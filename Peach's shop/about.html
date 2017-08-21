@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Peach's Shop</h1>
+        <article>
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="#">About us</a> </li>
+                <li><a href="#">Contacts</a> </li>
+                <li><a onclick="shop.show(shop.products)" href="#">Shop</a> </li>
+            </ul>
+        </article>
+    </header>
+
+
+    <section id="praskovi">
+        <form style="display:block">
+            <p> Sort By:</p>
+            <input onclick="shop.sortBy('cena')" type="radio" name="sort" value="0"> Price<br>
+            <input onclick="shop.sortBy('name')" type="radio" name="sort" value="1"> Name<br>
+        </form>
+        <!-- JavaScript code here -->
+    </section>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
